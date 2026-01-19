@@ -30,7 +30,7 @@ $requiredFields = [
     'idNumber', 'address', 'city', 'county',
     'emergencyName', 'emergencyPhone', 'relationship',
     'lastSchool', 'graduationYear', 'qualification',
-    'programme', 'programmeLevel', 'startDate',
+    'programme', 'programmeLevel', 'intake', 'intakeYear',
     'disabilityType', 'signLanguage',
     'motivation', 'goals'
 ];
@@ -98,7 +98,8 @@ $applicationData = [
     'programmeInfo' => [
         'programme' => sanitize($data['programme']),
         'level' => sanitize($data['programmeLevel']),
-        'startDate' => $data['startDate']
+        'intake' => sanitize($data['intake']),
+        'intakeYear' => intval($data['intakeYear'])
     ],
     'disabilityInfo' => [
         'type' => sanitize($data['disabilityType']),

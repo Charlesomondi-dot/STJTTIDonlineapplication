@@ -84,13 +84,6 @@ function validateField(field) {
                     errorMessage = 'You must be at least 16 years old to apply';
                 }
             }
-        } else if (field.id === 'startDate') {
-            const startDate = new Date(field.value);
-            const today = new Date();
-            if (startDate < today) {
-                isValid = false;
-                errorMessage = 'Start date cannot be in the past';
-            }
         }
     }
     // Number validation
@@ -163,7 +156,8 @@ function submitForm() {
         certificates: formData.get('certificates'),
         programme: formData.get('programme'),
         programmeLevel: formData.get('programmeLevel'),
-        startDate: formData.get('startDate'),
+        intake: formData.get('intake'),
+        intakeYear: formData.get('intakeYear'),
         disabilityType: formData.get('disabilityType'),
         supportNeeds: formData.get('supportNeeds'),
         signLanguage: formData.get('signLanguage'),
