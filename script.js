@@ -155,7 +155,7 @@ function submitForm() {
         qualification: formData.get('qualification'),
         certificates: formData.get('certificates'),
         programme: formData.get('programme'),
-        programmeLevel: formData.get('programmeLevel'),
+        programmeModule: formData.get('programmeModule'),
         intake: formData.get('intake'),
         intakeYear: formData.get('intakeYear'),
         disabilityType: formData.get('disabilityType'),

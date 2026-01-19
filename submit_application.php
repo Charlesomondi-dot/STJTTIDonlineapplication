@@ -30,7 +30,7 @@ $requiredFields = [
     'idNumber', 'address', 'city', 'county',
     'emergencyName', 'emergencyPhone', 'relationship',
     'lastSchool', 'graduationYear', 'qualification',
-    'programme', 'programmeLevel', 'intake', 'intakeYear',
+    'programme', 'programmeModule', 'intake', 'intakeYear',
     'disabilityType', 'signLanguage',
     'motivation', 'goals'
 ];
@@ -97,7 +97,7 @@ $applicationData = [
     ],
     'programmeInfo' => [
         'programme' => sanitize($data['programme']),
-        'level' => sanitize($data['programmeLevel']),
+        'module' => sanitize($data['programmeModule']),
         'intake' => sanitize($data['intake']),
         'intakeYear' => intval($data['intakeYear'])
     ],
@@ -216,14 +216,14 @@ function sendConfirmationEmail($data) {
     $message .= "We have received your application and will review it carefully. ";
     $message .= "You will be contacted within 7 business days regarding the status of your application.\n\n";
     $message .= "If you have any questions, please contact us at:\n";
-    $message .= "Email: info@stjosephstechnical.ac.ke\n";
-    $message .= "Phone: +254 (0) 123 456 789\n\n";
+    $message .= "Email: info@stjosephsttid.ac.ke\n";
+    $message .= "Phone: +254 (0) 755165570\n\n";
     $message .= "Best regards,\n";
     $message .= "St Joseph's Technical Institute for the Deaf\n";
     $message .= "Nyang'oma\n";
     
-    $headers = "From: info@stjosephstechnical.ac.ke\r\n";
-    $headers .= "Reply-To: info@stjosephstechnical.ac.ke\r\n";
+    $headers = "From: info@stjosephsttid.ac.ke\r\n";
+    $headers .= "Reply-To: info@stjosephsttid.ac.ke\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
     // Uncomment to enable email sending
