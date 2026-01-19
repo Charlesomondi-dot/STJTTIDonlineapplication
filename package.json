@@ -2,12 +2,13 @@
   "name": "stjosephsttidonlineapplication",
   "version": "1.0.0",
   "description": "St Joseph's Technical Institute Online Application Form",
-  "main": "index.html",
+  "main": "server.js",
   "engines": {
-    "php": "8.0.0"
+    "node": "18.x"
   },
   "scripts": {
-    "start": "php -S 0.0.0.0:${PORT:-8080}"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "keywords": [
     "application",
@@ -16,5 +17,8 @@
     "institute"
   ],
   "author": "St Joseph's Technical Institute",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
