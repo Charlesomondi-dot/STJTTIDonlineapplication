@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: stjosephsttidonlineapplication
+    runtime: php
+    buildCommand: "echo 'Building PHP application'"
+    startCommand: "php -S 0.0.0.0:${PORT:-8080}"
+    envVars:
+      - key: PORT
+        value: 8080
+    staticPublishPath: ./

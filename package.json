@@ -1,0 +1,20 @@
+{
+  "name": "stjosephsttidonlineapplication",
+  "version": "1.0.0",
+  "description": "St Joseph's Technical Institute Online Application Form",
+  "main": "index.html",
+  "engines": {
+    "php": "8.0.0"
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:${PORT:-8080}"
+  },
+  "keywords": [
+    "application",
+    "form",
+    "technical",
+    "institute"
+  ],
+  "author": "St Joseph's Technical Institute",
+  "license": "MIT"
+}
