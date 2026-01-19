@@ -31,7 +31,7 @@ $requiredFields = [
     'emergencyName', 'emergencyPhone', 'relationship',
     'lastSchool', 'graduationYear', 'qualification',
     'programme', 'programmeLevel', 'startDate',
-    'disabilityType', 'signLanguage', 'currentEmployment',
+    'disabilityType', 'signLanguage',
     'motivation', 'goals'
 ];
 
@@ -105,11 +105,7 @@ $applicationData = [
         'supportNeeds' => sanitize($data['supportNeeds']),
         'signLanguageExperience' => sanitize($data['signLanguage'])
     ],
-    'employment' => [
-        'status' => sanitize($data['currentEmployment']),
-        'jobTitle' => sanitize($data['jobTitle']),
-        'yearsOfExperience' => intval($data['workExperience'])
-    ],
+    // Employment section removed per requirements (no job application details)
     'additionalInfo' => [
         'motivation' => sanitize($data['motivation']),
         'goals' => sanitize($data['goals']),
